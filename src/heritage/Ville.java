@@ -90,7 +90,8 @@ public class Ville {
 
 	  //Retourne la description de la ville
 	  public String decrisToi(){
-	    return "\t"+this.nomVille+" est une ville de "+this.nomPays+ ", elle comporte : "+this.nbreHabitants+" habitant(s) => elle est donc de catégorie : "+this.categorie;
+	    return "\t"+this.nomVille+" est une ville de "+this.nomPays+ ", elle comporte : "
+	  + this.nbreHabitants+" habitant(s) => elle est donc de catégorie : "+this.categorie;
 	  }
 
 	  //Retourne une chaîne de caractères selon le résultat de la comparaison
