@@ -18,7 +18,7 @@ public class Capitale extends Ville {
 		public String decrisToi() {
 			String str = super.decrisToi() + "\n \t ==>>" + this.monument + 
 					" en est un monument";
-			return str;
+			return str; 
 		}
 	
 
