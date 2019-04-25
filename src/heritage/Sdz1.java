@@ -1,4 +1,4 @@
-package héritage;
+package heritage;
 
 public class Sdz1 {
 	  public static void main(String[] args){
