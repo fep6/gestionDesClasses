@@ -37,6 +37,13 @@ public class Sdz1 {
 	      
 	System.out.println(" v1 = "+v1.getNom()+" ville de  "+v1.getNombreHabitants()+ " habitants se situant en "+v1.getNomPays());
 	System.out.println(" v2 = "+v2.getNom()+" ville de  "+v2.getNombreHabitants()+ " habitants se situant en "+v2.getNomPays()+"\n\n");
+	  
+	  // Essai spour héritage
+	Capitale cap = new Capitale();
+	System.out.println(cap.decrisToi());
+	  
+	  
+	  
 	  }
 }
 
