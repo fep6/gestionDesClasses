@@ -3,6 +3,8 @@ package héritage;
 public class Sdz1 {
 	  public static void main(String[] args){
 
+		  // 25/04/19 10:32 1er commit & push
+		  
 	Ville v = new Ville();
 	Ville v1 = new Ville("Marseille", 123456, "France");       
 	Ville v2 = new Ville("Rio", 321654, "Brésil");
