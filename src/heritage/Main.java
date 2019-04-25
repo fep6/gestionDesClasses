@@ -1,6 +1,6 @@
 package heritage;
 
-public class Sdz1 {
+public class Main {
 	  public static void main(String[] args){
 
 		  //  25/04/19 10:32 1er commit & push
