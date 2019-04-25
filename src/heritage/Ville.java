@@ -3,6 +3,7 @@ package heritage;
 public class Ville {
 	
 	// 25/04/19 10:32 1er commit & push
+	// 25/04/19 10:46 2eme commit & push
 	
 	  private String nomVille;
 	  private String nomPays;
