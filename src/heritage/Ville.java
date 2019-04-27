@@ -3,7 +3,7 @@ package heritage;
 public class Ville {
 	
 	// 25/04/19 10:32 1er commit & push
-	// 25/04/19 10:46 2eme commit & push
+	// 25/04/19 10:46 s*2eme commit & push
 	//  25/04/19 11:09 1er commit & push
 	//  25/04/19 11:12 commit & push
 	
@@ -88,12 +88,25 @@ public class Ville {
 	    this.categorie = categories[i];
 	  }
 
+	  
+	  
+	  
+	  
+	  
 	  //Retourne la description de la ville
 	  public String decrisToi(){
 	    return "\t"+this.nomVille+" est une ville de "+this.nomPays+ ", elle comporte : "
 	  + this.nbreHabitants+" habitant(s) => elle est donc de catégorie : "+this.categorie;
 	  }
 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
 	  //Retourne une chaîne de caractères selon le résultat de la comparaison
 	  public String comparer(Ville v1){
 	    String str = new String();
