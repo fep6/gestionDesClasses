@@ -6,7 +6,7 @@ public class Capitale extends Ville {
 		//  25/04/19 11:12 commit & push
 		//  25/04/19 11:26 commit & push
 		//  25/04/19 11:28 commit PUIS push
-		//  02/05/19 15:15 Changement nom de projet heritage -> gestionDesClasses
+		//  02/05/19 15:15 Changement nom de projet heritage -> gestionDesClasses 
 		
 		private String monument;
 		
