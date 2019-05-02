@@ -1,6 +1,6 @@
 package heritage;
 
-public class Main {
+class Main {
 	  public static void main(String[] args){
 
 		  //  25/04/19 10:32 1er commit & push
@@ -56,28 +56,33 @@ public class Main {
 		  
 		  
 		  
-		    Ville[] tableau = new Ville[6];
-		    String[] tab = {"Marseille", "lille", "caen", "lyon", "paris", "nantes"};
-		    int[] tab2 = {123456, 78456, 654987, 75832165, 1594, 213};
-
-		    for(int i = 0; i < 6; i++){
-		      if (i <3){
-		    	  //3 premiers elements de tableau devrait contenir: Marseille, Lille , Caen instanciés selon Ville (3 critères)
-		    	  //3 derniers elements de tableau devrait contenir: Lyon, Paris, Lille instanciés selon Capitale (4 critères)
-		        Ville V = new Ville(tab[i], tab2[i], "france");
-		        tableau[i] = V;
-		      }
-		                
-		      else{
-		        Capitale C = new Capitale(tab[i], tab2[i], "france", "la tour Eiffel");
-		        tableau[i] = C;
-		      }
-		    }
-		                 
-		    //Il ne nous reste plus qu'à décrire tout notre tableau !
-		    for(Object V : tableau){
-		      System.out.println(V.decrisToi()+"\n");
-		    }	  
+	//Définition d'un tableau de villes null
+	Ville[] tableau = new Ville[6];
+	Ville[] tableau2 = new Capitale[1];
+	        
+	//Définition d'un tableau de noms de villes et un autre de nombres d'habitants
+	String[] tab = {"Marseille", "lille", "caen", "lyon", "paris", "nantes"};
+	int[] tab2 = {123456, 78456, 654987, 75832165, 1594, 213};
+	         
+	//Les trois premiers éléments du tableau seront des villes,
+	//et le reste, des capitales
+	for(int i = 0; i < 6; i++){
+	  if (i <3){
+	    Ville V = new Ville(tab[i], tab2[i], "france");
+	    tableau[i] = V;
+	    tableau2[0] = V;
+	  }
+	         
+	  else{
+	    Capitale C = new Capitale(tab[i], tab2[i], "france", "la tour Eiffel");
+	    tableau[i] = C;
+	  }
+	}
+	                 
+	//Il ne nous reste plus qu'à décrire tout notre tableau !
+	for(Ville V : tableau){
+	  System.out.println(V.decrisToi()+"\n");
+	}  
 		  
 		  
 		  

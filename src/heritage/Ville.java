@@ -6,7 +6,7 @@ public class Ville {
 	// 25/04/19 10:46 s*2eme commit & push
 	//  25/04/19 11:09 1er commit & push
 	//  25/04/19 11:12 commit & push
-	
+	 
 	  
 	  public static int nbreInstances = 0;
 	  protected static int nbreInstancesBis = 0;
@@ -95,7 +95,7 @@ public class Ville {
 	  
 	  //Retourne la description de la ville
 	  public String decrisToi(){
-	    return "\t"+this.nomVille+" est une ville de "+this.nomPays+ ", elle comporte : "
+		  return "\t"+this.nomVille+" est une ville de "+this.nomPays+ ", elle comporte : "
 	  + this.nbreHabitants+" habitant(s) => elle est donc de catégorie : "+this.categorie;
 	  }
 
