@@ -9,7 +9,7 @@ public class Ville {
 	 
 	  
 	  public static int nbreInstances = 0;
-	  protected static int nbreInstancesBis = 0;
+	  private static int nbreInstancesBis = 0;
 	
 	  protected String nomVille;
 	  protected String nomPays;
@@ -17,6 +17,8 @@ public class Ville {
 	  protected char categorie;
 	   
 	  public Ville(){
+		nbreInstances++;
+		nbreInstancesBis++;
 	    System.out.println("Création d'une ville !");          
 	    nomVille = "Inconnu";
 	    nomPays = "Inconnu";
@@ -26,12 +28,18 @@ public class Ville {
 	 
 	  public Ville(String pNom, int pNbre, String pPays)
 	  {
+		nbreInstances++;
+		nbreInstancesBis++;
 	    System.out.println("Création d'une ville avec des paramètres !");
 	    nomVille = pNom;
 	    nomPays = pPays;
 	    nbreHabitants = pNbre;
 	    this.setCategorie();
-	  }  
+	  }
+	  
+	  public static int getNombreInstancesBis() {
+		  return nbreInstancesBis;
+	  }
 	    
 	  //Retourne le nom de la ville
 	  public String getNom()  {  
